@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es2</title>
+  </head>
+  <body>
+    <h1>Registrazione sito internet</h1>
+    <form action="#">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Inserisci il tuo nome"
+        minlength="2"
+        required
+      />
+      <br>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Inserisci il tuo cognome"
+        required
+      />
+      <br>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Inserisci la tua email"
+        required
+      />
+      <br>
+      <select name="region" id="regione" required>
+        <option value="">----</option>
+        <option value="Piedmont">Piemonte</option>
+        <option value="Lombardy">Lombardia</option>
+        <option value="Veneto">Veneto</option>
+        <option value="Lazio">Lazio</option>
+      </select>
+      <br>
+      <input type="radio" name="age" id="minorenne" required/>
+      <label for="minorenne">0-18 </label>
+      <input type="radio" name="age" id="maggiorenne" required/>
+      <label for="maggiorenne">18+ </label>
+      <br>
+      <input type="checkbox" name="condizioni" id="condizioni" required/>
+      <label for="condizioni">Accetta i termini e le condizioni</label>
+      <br>
+      <input type="submit" value="Invia" />
+    </form>
+  </body>
+</html>
